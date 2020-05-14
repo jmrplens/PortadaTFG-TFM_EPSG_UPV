@@ -1,2 +1,2 @@
 # PortadaTFG-TFM_UPV
-Portada en formato LaTeX para los Trabajos Fin de Grado y Fin de Máster de la Universitat Politècnica de València
+Plantilla con el diseño de portada y la página resumen que se exige en la Escuela: <a href="http://www.upv.es/contenidos/CGANDIA/administracion/U0737366.pdf">Directrices</a>
