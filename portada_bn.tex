@@ -1,0 +1,109 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plantilla TFG/TFM
+% Realizado por: Jose Manuel Requena Plens
+% Contacto: info@jmrplens.com / Telegram:@jmrplens
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Fuentes
+\newfontfamily\ArialMT{ArialMT}[Path=./fuentes/] 
+\newfontfamily\ArialBoldMT{Arial-BoldMT}[Path=./fuentes/] 
+\newfontfamily\ArialBoldItalicMT{Arial-BoldItalicMT}[Path=./fuentes/] 
+
+\begin{titlepage}
+
+% Márgenes de esta pagina modificados
+\newgeometry{ignoreall,top=2.5cm,bottom=1cm,outer=2.5cm,inner=2.5cm}
+
+% Pagina sin estilo
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Universidad, facultad y titulación
+\noindent\begin{minipage}{\textwidth}
+\centering
+% Universidad
+ {\ArialMT\fontsize{20pt}{25pt}
+ {\addfontfeature{LetterSpace=1.0}
+ {\MakeUppercase\Universidad}}}\\[0.5cm]
+% Facultad
+ {\ArialBoldMT\fontsize{14pt}{17pt}
+ {\addfontfeature{LetterSpace=10.0}{
+ \MakeUppercase\Facultad}}}\\[0.42cm] 
+% Titulación
+ {\ArialBoldMT\fontsize{13pt}{16pt}
+ {\addfontfeature{LetterSpace=16.0}{
+ \Titulacion}}}
+\noindent\rule[-0.22cm]{\textwidth}{5pt} % Linea
+\end{minipage}
+
+% Relleno hasta logotipos
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Logotipos
+% Universidad
+\begin{textblock*}{4cm}(1.45cm,-6.52cm)% Ancho - Pos X,PosY
+	 \includegraphics[width=4cm]{\LogoUniversidad}
+\end{textblock*}
+% Facultad
+\begin{textblock*}{3cm}(11.46cm,-6.72cm)% Ancho - Pos X,PosY
+	 \includegraphics[width=3cm]{\LogoFacultad}
+\end{textblock*}
+
+% Relleno hasta el título
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Título
+\begin{textblock*}{\textwidth}(0cm,-6.1cm)% Ancho - Pos X,PosY
+\noindent
+\begin{minipage}{\textwidth}
+\begin{spacing}{2.1}
+ \centering
+  {\fontsize{25pt}{30pt}\ArialBoldMT
+  {\addfontfeature{}
+ \textquotedblleft\titulo\textquotedblright}}
+\end{spacing}
+\end{minipage}
+\end{textblock*}
+
+% Relleno hasta autor y tutores
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tipo, Autor y Tutores
+\begin{textblock*}{7.35cm}(8.65cm,-7.88cm)% Ancho - Pos X,PosY
+\begin{flushleft}
+% Tipo trabajo
+ {\ArialBoldItalicMT\fontsize{12pt}{14pt}
+ {\addfontfeature{}
+ {\MakeUppercase\tipotrabajo}}}\\[0.49cm]
+% Autor
+ {\ArialMT\fontsize{12pt}{14pt}
+ {\addfontfeature{}
+ Autor/a:}}\\ 
+ {\ArialBoldMT\fontsize{12pt}{14pt}
+ {\addfontfeature{}
+ {\miNombre}}}\\[0.5cm]
+% Tutores
+ {\ArialMT\fontsize{12pt}{14pt}
+ {\addfontfeature{}
+ Tutor/a:}}\\
+ {\ArialBoldMT\fontsize{12pt}{14pt}
+ {\addfontfeature{}
+ {\miTutor}}}\\[0.49cm]
+% Localidad y Fecha
+ {\ArialBoldItalicMT\fontsize{12pt}{14pt}
+ {\addfontfeature{}
+ {\MakeUppercase \miUbicacion, \number\year}}}
+\end{flushleft}
+\end{textblock*}
+
+
+
+\end{titlepage} % Fin de portada
+
+% A partir de aquí aplica los márgenes establecidos en configuracioninicial.tex
+\restoregeometry
+
+

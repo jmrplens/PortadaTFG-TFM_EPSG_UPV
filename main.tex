@@ -1,0 +1,71 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plantilla TFG/TFM
+% Realizado por: Jose Manuel Requena Plens
+% Contacto: info@jmrplens.com / Telegram:@jmrplens
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Clase de documento (Utilizar la que interese)
+\documentclass{scrbook}
+
+% MÁRGENES DE LAS PÁGINAS
+\usepackage[
+  inner	=	3.0cm, % Margen interior
+  outer	=	2.5cm, % Margen exterior
+  top	=	2.5cm, % Margen superior
+  bottom=	2.5cm, % Margen inferior
+  includeheadfoot, % Incluye cabecera y pie de página en los márgenes
+]{geometry}
+% Valor de interlineado
+\renewcommand{\baselinestretch}{1.0} % 1 línea de interlineado
+
+% Paquetes imprescindibles para la portada
+\usepackage{fontspec} % Para poder importar las fuentes
+\usepackage{textpos} % Para posicionar bloques de texto
+\usepackage{graphicx} % Para cargar imágenes
+\usepackage{setspace} % Para modificar los espacios arriba y abajo
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% INFORMACIÓN DEL TFG/TFM
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Universidad y facultad
+\newcommand{\Universidad}{Universitat Politècnica de València}
+\newcommand{\LogoUniversidad}{logos-universidad/LogoUPV}
+\newcommand{\Facultad}{Escola Politècnica Superior de Gandia}
+\newcommand{\LogoFacultad}{logos-universidad/LogoEPSG}
+% Titulación
+\newcommand{\Titulacion}{Nombre del Grado o Máster}
+% Título del trabajo
+\newcommand{\titulo}{Título del Trabajo Final de Grado o Máster}
+% Tipo de trabajo
+\newcommand{\tipotrabajo}{Trabajo Final de Grado o Máster}
+% Datos del autor
+\newcommand{\miNombre}{Nombre Apellido1 Apellido2}
+\newcommand{\miEmail}{joreple@epsg.upv.es}
+% Datos del tutor/es
+\newcommand{\miTutor}{Nombre Apellido1 Apellido2 \\ ¿Segundo tutor/a?}
+% Ubicación
+\newcommand{\miUbicacion}{Gandia}
+
+
+\begin{document}
+
+
+%%%%% PORTADA
+\input{portada_bn} % Portada B/N
+
+%%%%% RESUMEN
+\input{resumen}
+
+%%%%% INDICES
+\tableofcontents
+
+%%%%% Resto del documento
+\chapter{Esto es un capítulo}
+
+\section{Esto es una sección}
+
+\subsection{Esto es una subsección}
+
+\subsubsection{Esto es una subsubsección}
+
+\end{document}
